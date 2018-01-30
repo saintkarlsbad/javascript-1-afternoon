@@ -18,7 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler (name) {
+  if (name==='Tyler') {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,8 +34,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+function getName () {
+  return prompt('What is your name?')
+  }
 
 ////////// PROBLEM 3 //////////
 
@@ -41,7 +48,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome () {
+  getName();
+  return alert("Welcome, Rockstar");
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +61,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//Paramaters are placeholders in the function. i.e. function paramaterLetters (p1,p2). Arguments are the assigned value in a function. () {add p1 + p2}
 
 
 ////////// PROBLEM 5 //////////
@@ -61,7 +71,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+// null, undefined, false, NaN, 0, ""     Something is falsy when it has to value or meaning to it
 
 
 ////////// PROBLEM 6 //////////
@@ -71,7 +81,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName () {
+    return "Karli";
+  }
 
 
 /*
@@ -79,7 +91,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var newMyName = myName;
 
 
 /*
@@ -87,7 +99,8 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+newMyName();
+alert ();
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +110,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn () {
+  return function () {
+    return "Karli";
+  }
+}
 
 
 /*
@@ -105,7 +122,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn;
 
 
 /* 
@@ -113,3 +130,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn();
